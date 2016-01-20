@@ -1,4 +1,5 @@
 language: clojure
+build_image: drydock/u12sca:tip
 install: cd leiningen-core; lein install; lein classpath | tail -n 1 > .lein-bootstrap; cd ..
 script: bin/lein test
 sudo: false
